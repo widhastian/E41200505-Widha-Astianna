@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Language Class</string>
+
+    <string name="daftar">Pendaftaran</string>
+    <string name="kelas">Kelas Internasional Bahasa</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="nama2">Masukkan Nama Lengkap</string>
+    <string name="tgllahir">Tanggal Lahir</string>
+    <string name="alamat">Alamat</string>
+    <string name="prov">Provinsi</string>
+    <string name="prov2">Ketikkan nama Provinsi</string>
+    <string name="kota">Kota</string>
+    <string name="kota2">Ketik nama Kota</string>
+    <string name="email">Email Aktif</string>
+    <string name="email2">Masukkan alamat Email aktif</string>
+    <string name="nomor">Nomer Hp Aktif</string>
+    <string name="nomor2">Masukkan nomer Hp aktif</string>
+    <string name="submit">Daftar</string>
+
+    <string-array name="date">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+    </string-array>
+
+    <string-array name="pilihan_bahasa">
+        <item>Bahasa Inggris</item>
+        <item>Bahasa Korea</item>
+        <item>Bahasa Jepang</item>
+        <item>Bahasa China</item>
+        <item>Bahasa Jerman</item>
+    </string-array>
+
+    <string-array name="modul">
+        <item>10 Modul</item>
+        <item>10 Modul</item>
+        <item>10 Modul</item>
+        <item>10 Modul</item>
+        <item>10 Modul</item>
+    </string-array>
+
+</resources>

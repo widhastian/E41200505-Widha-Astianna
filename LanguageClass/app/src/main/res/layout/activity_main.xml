@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#9370db"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/daftar"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kelas"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/ic_bg1"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:hint="@string/nama2"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/tvTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tgllahir"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <Spinner
+                android:id="@+id/spinnertgl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/spinnerbln"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/spinnerthn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/tvProv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prov"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_weight="3"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/ectProv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prov2"
+                android:layout_weight="1"
+                android:completionThreshold="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/tvKota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kota"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_weight="3"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/ectKota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/kota2"
+                android:layout_weight="1"
+                android:completionThreshold="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email2"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
