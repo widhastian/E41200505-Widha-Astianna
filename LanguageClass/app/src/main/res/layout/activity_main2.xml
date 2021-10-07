@@ -8,7 +8,7 @@
     android:padding="10dp"
     tools:context=".MainActivity2">
 
-
+    //recycler view untuk data bahasa
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

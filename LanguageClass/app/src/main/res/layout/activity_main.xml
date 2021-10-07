@@ -9,6 +9,7 @@
     android:background="#9370db"
     tools:context=".MainActivity">
 
+    //layout untuk kata "pendaftaran"
     <TextView
         android:id="@+id/tvDaftar"
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
         android:textColor="@color/white"
         android:layout_marginTop="5dp"/>
 
+    //layout untuk kata "Kelas Internasional Bahasa"
     <TextView
         android:id="@+id/tvKelas"
         android:layout_width="match_parent"
@@ -31,6 +33,7 @@
         android:textColor="@color/white"
         android:layout_marginBottom="15dp"/>
 
+    //linear layout baru
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,6 +43,7 @@
         android:layout_marginTop="5dp"
         tools:context=".MainActivity">
 
+        //lauout untuk kata "Nama Lengkap"
         <TextView
             android:id="@+id/tvNama"
             android:layout_width="match_parent"
@@ -51,6 +55,7 @@
             android:padding="5dp"
             android:layout_marginTop="10dp"/>
 
+        //layout untuk teks yang bisa diedit atau tempat menginputkan nama
         <EditText
             android:id="@+id/etNama"
             android:layout_width="match_parent"
@@ -59,6 +64,7 @@
             android:hint="@string/nama2"
             android:inputType="text"/>
 
+        //layout untuk tanggal lahir
         <TextView
             android:id="@+id/tvTanggalLahir"
             android:layout_width="match_parent"
@@ -69,24 +75,28 @@
             android:textColor="@color/black"
             android:padding="5dp"/>
 
+        //linear layout baru untuk tanggal lahir
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             tools:context=".MainActivity">
 
+            //spinner tanggal
             <Spinner
                 android:id="@+id/spinnertgl"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_weight="1"/>
 
+            //spinner bulan
             <Spinner
                 android:id="@+id/spinnerbln"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_weight="1"/>
 
+            //spinner tahun
             <Spinner
                 android:id="@+id/spinnerthn"
                 android:layout_width="match_parent"
@@ -95,6 +105,7 @@
 
         </LinearLayout>
 
+        //layout untuk alamat
         <TextView
             android:id="@+id/tvAlamat"
             android:layout_width="match_parent"
@@ -105,6 +116,7 @@
             android:textColor="@color/black"
             android:padding="5dp"/>
 
+        //linear layout baru untuk alamat
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,6 +124,7 @@
             android:padding="5dp"
             tools:context=".MainActivity">
 
+            //layout untuk provinsi
             <TextView
                 android:id="@+id/tvProv"
                 android:layout_width="match_parent"
@@ -121,6 +134,7 @@
                 android:textColor="@color/black"
                 android:layout_weight="3"/>
 
+            //auto complete untuk memasukkan provinsi
             <AutoCompleteTextView
                 android:id="@+id/ectProv"
                 android:layout_width="match_parent"
@@ -131,6 +145,7 @@
 
         </LinearLayout>
 
+        //linear layout baru untuk masukkan kota
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -138,6 +153,7 @@
             android:padding="5dp"
             tools:context=".MainActivity">
 
+            //layout untuk kota
             <TextView
                 android:id="@+id/tvKota"
                 android:layout_width="match_parent"
@@ -147,6 +163,7 @@
                 android:textColor="@color/black"
                 android:layout_weight="3"/>
 
+            //auto complete untuk tempat memasukkan nama kota
             <AutoCompleteTextView
                 android:id="@+id/ectKota"
                 android:layout_width="match_parent"
@@ -157,6 +174,7 @@
 
         </LinearLayout>
 
+        //layout untuk kata email
         <TextView
             android:id="@+id/tvEmail"
             android:layout_width="match_parent"
@@ -167,6 +185,7 @@
             android:textColor="@color/black"
             android:padding="5dp"/>
 
+        //layout untuk tempat memasukkan alamat email
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
@@ -174,6 +193,7 @@
             android:hint="@string/email2"
             android:inputType="textEmailAddress"/>
 
+        //button
         <Button
             android:id="@+id/btnDaftar"
             android:layout_width="match_parent"

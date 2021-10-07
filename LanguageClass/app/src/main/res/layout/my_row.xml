@@ -6,6 +6,9 @@
     android:layout_height="wrap_content"
     android:id="@+id/MainLayout">
 
+    //file ini berfungsi untuk mengatur susunan item yang nantinya akan diperluas dengan memanggil
+    //beberapa data lainnya di activity 2 dan MyAdapter
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

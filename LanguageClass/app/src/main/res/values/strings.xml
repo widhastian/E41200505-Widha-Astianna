@@ -1,6 +1,8 @@
 <resources>
+    //nama aplikasi
     <string name="app_name">Language Class</string>
 
+    //nama nama yang digunakan di linear layout maupun di constraint layout
     <string name="daftar">Pendaftaran</string>
     <string name="kelas">Kelas Internasional Bahasa</string>
     <string name="nama">Nama Lengkap</string>
@@ -17,6 +19,7 @@
     <string name="nomor2">Masukkan nomer Hp aktif</string>
     <string name="submit">Daftar</string>
 
+    //data tanggal
     <string-array name="date">
         <item>1</item>
         <item>2</item>
@@ -51,6 +54,7 @@
         <item>31</item>
     </string-array>
 
+    //data bulan
     <string-array name="month">
         <item>Januari</item>
         <item>Februari</item>
@@ -66,6 +70,7 @@
         <item>Desember</item>
     </string-array>
 
+    //data tahun
     <string-array name="year">
         <item>1990</item>
         <item>1991</item>
@@ -91,6 +96,7 @@
         <item>2011</item>
     </string-array>
 
+    //data pilihan bahasa
     <string-array name="pilihan_bahasa">
         <item>Bahasa Inggris</item>
         <item>Bahasa Korea</item>
@@ -99,12 +105,21 @@
         <item>Bahasa Jerman</item>
     </string-array>
 
+    //data deskripsi yang letaknnya dibawah nama bahasa di recycler view
     <string-array name="modul">
         <item>10 Modul</item>
-        <item>10 Modul</item>
-        <item>10 Modul</item>
-        <item>10 Modul</item>
-        <item>10 Modul</item>
+        <item>13 Modul</item>
+        <item>9 Modul</item>
+        <item>14 Modul</item>
+        <item>8 Modul</item>
+    </string-array>
+
+    <string-array name="desk">
+        <item>Dalam Kelas Bahasa Inggris kali ini kita akan mempelajari bagaimana cara penggunaan dan pengucapan Bahasa Inggris dengan baik dan benar</item>
+        <item>Dalam Kelas Bahasa Korea kali ini kita akan mempelajari bagaimana cara penggunaan dan pengucapan Bahasa Korea dengan baik dan benar</item>
+        <item>Dalam Kelas Bahasa Jepang kali ini kita akan mempelajari bagaimana cara penggunaan dan pengucapan Bahasa Jepang dengan baik dan benar</item>
+        <item>Dalam Kelas Bahasa China kali ini kita akan mempelajari bagaimana cara penggunaan dan pengucapan Bahasa China dengan baik dan benar</item>
+        <item>Dalam Kelas Bahasa Jerman kali ini kita akan mempelajari bagaimana cara penggunaan dan pengucapan Bahasa Jerman dengan baik dan benar</item>
     </string-array>
 
 </resources>

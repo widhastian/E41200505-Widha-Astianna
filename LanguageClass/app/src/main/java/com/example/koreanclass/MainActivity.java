@@ -12,6 +12,8 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
+    //inisialisasi
+
     Spinner spinner;
 
     private static final String[] prov = new String[]{"Jawa Timur", "Jawa Barat", "Jawa Tengah", "DKI Jakarta", "DIY Yogyakarta"};
@@ -27,36 +29,42 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //fungsi untuk spinner tanggal
         spinner = findViewById(R.id.spinnertgl);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.date, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+        //fungsi untuk spinner bulan
         spinner = findViewById(R.id.spinnerbln);
 
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.month, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter2);
 
+        //fungsi untuk spinner tahun
         spinner = findViewById(R.id.spinnerthn);
 
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.year, android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter3);
 
+        //fungsi untuk auto complete provinsi
         provinsi = findViewById(R.id.ectProv);
 
         ArrayAdapter<String> adapterprov = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, prov);
         adapterprov.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         provinsi.setAdapter(adapterprov);
 
-        provinsi = findViewById(R.id.ectKota);
+        //fungsi untuk auto complete kota
+        kota = findViewById(R.id.ectKota);
 
         ArrayAdapter<String> adapterkota = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, city);
         adapterkota.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         provinsi.setAdapter(adapterkota);
 
+        //fungsi untuk button daftar agar bisa tersambung dengan activity 2
         button = (Button) findViewById(R.id.btnDaftar);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

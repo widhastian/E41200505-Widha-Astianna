@@ -30,6 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @NonNull
     @Override
+    //untuk memunculkan susunan data yang sudah dibuat di file my_row
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.my_row, parent, false);
@@ -37,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
+    //untuk membuat masing masing data item di file my_row dapat di klik
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
 
         holder.MyText1.setText(data1[position]);
@@ -58,10 +60,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
+    //menghitung panjang data
     public int getItemCount() {
         return images.length;
     }
 
+    //fungsi untuk menemukan data menggunakan id yang akan dieksekusi oleh
+    //public void onBindViewHolder
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView MyText1, MyText2;

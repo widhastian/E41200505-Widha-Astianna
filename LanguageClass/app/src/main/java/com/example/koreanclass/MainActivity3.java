@@ -31,7 +31,10 @@ public class MainActivity3 extends AppCompatActivity {
 
     }
 
+    //fungsi untuk mengambil data
     private void getData(){
+        //jika diklik pada bagian myImage, data1 atau data2 maka akan langsung muncul data di halaman baru atau
+        //detail dari item yang di klik
         if(getIntent().hasExtra("myImage") && getIntent().hasExtra("data1") &&
         getIntent().hasExtra("data2")){
 
@@ -39,11 +42,13 @@ public class MainActivity3 extends AppCompatActivity {
             data2 = getIntent().getStringExtra("data2");
             myImage = getIntent().getIntExtra("myImage", 1);
 
+            //jika tidak ada maka akan memunculkan alert yaitu data tidak ditemukan
         }else{
             Toast.makeText(this, "Data tidak ditemukan", Toast.LENGTH_SHORT).show();
         }
     }
 
+    //fungsi untuk mengatur data
     private void setData(){
         title.setText(data1);
         description.setText(data2);
